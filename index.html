@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="">
+    <link rel="icon" href="./Udemy-logo-1.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar__sec1">
+            <!-- <h1 class="navbar__sec1__title">Udemy</h1> -->
+            <img src="./udemy new img.webp" alt="">
+
+        </div>
+        <div class="navbar__sec2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Search for anything like Business,Arts">
+
+        </div>
+        <div class="navbar__sec3">
+            <p><a href="">Home</a></p>
+            <p><a href="./course.html">Courses</a></p>
+            <p><a href="./mylearnings.html">My Learnings</a></p>
+            <div id="icons">
+                <i class="fa-solid fa-cart-shopping" id="cart" style="color: #000205;"></i>
+                <i class="fa-solid fa-bell" style="color: #000714;"></i>
+                <i class="fa-solid fa-user" id="profile" style="color: #000000;"></i>
+            </div>
+
+        </div>
+
+        <div id="navbarsec4" onclick="showSideBar()"><i class="fa-solid fa-bars"
+                style="color: rgb(0, 0, 0); display: none; font-size: 25px;"></i></div>
+    </div>
+
+    <!-- UserStart -->
+
+    <div class="user">
+        <a href=""><button class="log">Login</button></a>
+        <a href=""><button class="sign">SignUp</button></a>
+    </div>
+
+    <!-- UserEnd -->
+
+    <!-- CartStart -->
+    <div id="cartcontent">
+        <h2 class="carttitle">Your Cart is Empty.</h2>
+        <a href="">Keep Shopping</a>
+    </div>
+
+    <!-- CartEnd -->
+
+    <!-- Sidenavbar -->
+    <div id="sidenavbar" style="display: none; transition: 0.4s; background-color: rgb(0, 191, 255);">
+        <button class="close"
+            style="background-color: rgb(0, 255, 0); border: none;border-radius: 50%; width: 30px;height: 30px;"
+            onclick="closebtn()">X</button>
+        <div class="sidenavbarlink" style="text-decoration: none; font-size: 20px;">
+            <p><a href="" style="text-decoration: none;">courses</a></p>
+            <p><a href="" style="text-decoration: none;">My Learnings</a></p>
+
+        </div>
+    </div>
+
+    <!-- Sidenavbar end -->
+    <div class="Category">
+        <a href="" id="dev">Development</a>
+        <a href="">Business</a>
+        <a href="">IT & Software</a>
+        <a href="">Personal Development</a>
+        <a href="">Design</a>
+        <a href="">Marketing</a>
+    </div>
+
+    <div class="development_title" id="devtitle">
+
+        <p>Web Development</p>
+        <p>Mobile Development</p>
+        <p>Data Science</p>
+        <p>Programming Languages</p>
+        <p>Game Development</p>
+        <p>Database</p>
+        <p>Software Testing</p>
+        <p>Software Engineering</p>
+        <p>Software Development Tools</p>
+        <p>No Code Development</p>
+
+    </div>
+
+
+    <div class="udemy-pic">
+        <img src="./udemy pic.jpg" alt="udemy" class="manpic">
+        <img src="./udemy pic mobile.png" style="display: none;" alt="" class="manpicmobile">
+        <!-- <div class="off">
+            <h1>Learnings that gets you</h1>
+            <p>Skills for your present (and your future). Get started with us</p>
+        </div> -->
+    </div>
+    <div class="recommended">
+        <h1 class="recommended__title">Recommended for you</h1>
+        <h3 class="recommended__subtitle">Pick the best fit</h3>
+    </div>
+
+    <div class="recommended-container">
+        <div class="course-card">
+            <img src="./tech.jpg" alt="FSD" style="height: 250px;" width="250px">
+            <h1>Full Stack Development</h1>
+            <h2>Reobert Clive</h2>
+            <h3>4.8⭐⭐⭐⭐</h3>
+            <h4>999 <del>1500</del></h4>
+        </div>
+        <div class="course-card">
+            <img src="./tech.jpg" alt="FSD" style="height: 250px;" width="250px">
+            <h1>Master UI/UIX Developing</h1>
+            <h2>Reobert Clive</h2>
+            <h3>4.7⭐⭐⭐⭐</h3>
+            <h4>499 <del>999</del></h4>
+        </div>
+        <div class="course-card">
+            <img src="./tech.jpg" alt="FSD" style="height: 250px;" width="250px">
+            <h1>Data Science</h1>
+            <h2>Reobert Clive</h2>
+            <h3>4.6⭐⭐⭐⭐</h3>
+            <h4>4999 <del>7500</del></h4>
+        </div>
+        <div class="course-card">
+            <img src="tech.jpg" alt="FSD" style="height: 250px;" width="250px">
+            <h1>Backend Development</h1>
+            <h2>Reobert Clive</h2>
+            <h3>4.8⭐⭐⭐⭐</h3>
+            <h4>1500 <del>2000</del></h4>
+        </div>
+    </div>
+
+    <div class="topics">
+        <h1 class="topics-title">Recommended for you</h1>
+        <div class="container-topic">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>React Js</p>
+            <p>Node Js</p>
+            <p>Mongo DB</p>
+            <p>Angular Js</p>
+            <p>Tailwind CSS</p>
+            <p>Azure</p>
+        </div>
+
+    </div>
+    <div class="popular">
+        <h1 class="popular__title">Most Popular</h1>
+        <p class="popular__subtitle" style="color: green; font-weight: bold;">Pick the best fit</p>
+        <div class="popular__container">
+            <div class="course-card">
+                <img src="./tech.jpg" alt="FSD">
+                <h3>Ethical Hacking</h3>
+                <p>Brian Goetz</p>
+                <p>4.8⭐⭐⭐⭐</p>
+                <p>999 <del>1500</del></p>
+            </div>
+            <div class="course-card">
+                <img src="./tech.jpg" alt="FSD">
+                <h3>Network Security</h3>
+                <p>Dennis Ritchie</p>
+                <p>4.7⭐⭐⭐⭐</p>
+                <p>499 <del>999</del></p>
+            </div>
+            <div class="course-card">
+                <img src="./tech.jpg" alt="FSD">
+                <h3>Cyber Security</h3>
+                <p>Rasmus Lerdorf</p>
+                <p>4.6⭐⭐⭐⭐</p>
+                <p>4999 <del>7500</del></p>
+            </div>
+            <div class="course-card">
+                <img src="./tech.jpg" alt="FSD">
+                <h3>SQL</h3>
+                <p>Brendan Eich</p>
+                <p>4.8⭐⭐⭐⭐</p>
+                <p>1500 <del>2000</del></p>
+            </div>
+            <div class="course-card">
+                <img src="./tech.jpg" alt="FSD">
+                <h3>My SQL</h3>
+                <p>Larry Wall</p>
+                <p>4.8⭐⭐⭐⭐</p>
+                <p>1500 <del>2000</del></p>
+            </div>
+            <div class="course-card">
+                <img src="./tech.jpg" alt="FSD">
+                <h3>Software Testing</h3>
+                <p>John McCarthy</p>
+                <p>4.8⭐⭐⭐⭐</p>
+                <p>1500 <del>2000</del></p>
+            </div>
+            <div class="course-card">
+                <img src="./tech.jpg" alt="FSD">
+                <h3>Mobile Development</h3>
+                <p>Brendan Eich</p>
+                <p>4.8⭐⭐⭐⭐</p>
+                <p>1500 <del>2000</del></p>
+            </div>
+            <div class="course-card">
+                <img src="./tech.jpg" alt="FSD">
+                <h3>C++(Programming Language)</h3>
+                <p>Reobert Clive</p>
+                <p>4.8⭐⭐⭐⭐</p>
+                <p>1500 <del>2000</del></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Udemy Business -->
+
+    <div class="udemy_buisness">
+        <div class="udemy_buisness_title_one">
+            <h1>Udemy Business</h1>
+            <h2>Upskill your team with Udemy Business</h2>
+
+            <li>Unlimited access to 25,000+ top Udemy courses, anytime, anywhere</li>
+            <li>International course collection in 14 languages</li>
+            <li>Top certifications in tech and business</li>
+        </div>
+        <img src="./udemy coversation.png" alt="" class="udemy_business_img">
+
+        <div class="udemy_buisness_title_two">
+            <button class="btn1">Get Udemy Business</button>
+            <button class="btn1">Learn More</button>
+
+        </div>
+
+    </div>
+
+    <!-- UDemy Business end -->
+
+    <div class="teaching">
+        <div class="teaching_img">
+            <img src="./teaching img.png" alt="">
+        </div>
+        <div class="teching_title">
+            <h1>Become an instructor</h1>
+            <li>GenAI and leadership are at the core of today's skills-based economy.</li><br>
+            <li>Get the 2024 Global Learning & Skills Trends Report to learn more.</li>
+            
+            <button class="teaching_btn">Start Teaching Today</button>
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        <div class="footer__one">
+            <div class="footer__one__s1">
+                <p><a href="">Udemy Business</a></p>
+                <p><a href="">Tech on Udemy</a></p>
+                <p><a href="">Get the App</a></p>
+                <p><a href="">Abouty us</a></p>
+                <p><a href="">Contacts</a></p>
+            </div>
+            <div class="footer__two__s1">
+                <p><a href="">Carrers</a></p>
+                <p><a href="">Belong</a></p>
+                <p><a href="">Help & Support</a></p>
+                <p><a href="">Affiliate</a></p>
+                <p><a href="">Investors</a></p>
+            </div>
+
+            <div class="footer__three__s1">
+                <p><a href="">Terms</a></p>
+                <p><a href="">Privacy Policy</a></p>
+                <p><a href="">Cookie Settings</a></p>
+                <p><a href="">Sitemap</a></p>
+                <p><a href="">Accessibility Statement</a></p>
+            </div>
+        </div>
+
+        <div class="footer__two">
+            <img src="./udemy footer img.webp" alt="">
+            <p>&copy; Udemy, Inc</p>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

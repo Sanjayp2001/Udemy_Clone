@@ -1,0 +1,19 @@
+Selenium Histroy:
+-----------------
+
+* Early 2004, selenium was conceived by a thought works engineer Jason Huggins.
+* First tool was created by Jason which is called as 'JavaScriptTestRunner'.
+* selenium 1.0 was released on 2009 which has RC only.
+* selenium 2.0 was released on 2011 which is merged with Webdriver. And Rc got deprecated.
+* Selenium 3.0 was released on 2016 which is extended version of selenium 2.0. It s inherently backward compatible and does not involve selenium RC. it includes server bug fixes and incresed stability.
+* Selenium 4.0 was released on 2021 which uses complete W3C (World Wide Web Consortium) adoption and introduces various features!
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Selenium Architecture:
+----------------------
+
+* First, Selenium has language/client binding which is used to prepare the testcases.
+* After Writing testSricpts,
+
+
